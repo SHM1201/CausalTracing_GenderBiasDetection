@@ -69,7 +69,7 @@ Initially most amount of bias came from L10H9 then L9H7 during activation patchi
 ---
 ## 5. Test
 
-### How do we know that the Activation Patching actually works?
+### How do we know that the Activation Patching code actually works?
 
  "Identity Patching" was done to see if Activation Patching actually works. The "Nurse" activations were patched *back into* the "Nurse" prompt.
 > *   **Hypothesis:** If the code is bug-free, the logit difference should remain exactly identical to the baseline.
