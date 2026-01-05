@@ -15,7 +15,7 @@ Rather than focusing solely on output probabilities, this project aims to identi
 **Scope:**
 *   **Model:** GPT-2 Small.
 *   **Method:** Activation Patching and Mean Ablation.
-*   **Task:** Pronoun resolution in occupational contexts.
+*   **Task:** Predicting "he" or "she" based on job titles.
 
 ---
 
