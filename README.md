@@ -76,7 +76,6 @@ Initially most amount of bias came from L10H9 then L9H7 during activation patchi
 > *   **Result:** The difference was effectively zero (< 1e-5), confirming that our tooling captures real causal effects and does not introduce numerical noise.
 
 ---
-
 ## 6. Architecture Context
 
 The findings are specific to the architecture of **GPT-2 Small**:
@@ -86,17 +85,7 @@ The findings are specific to the architecture of **GPT-2 Small**:
 *   **Layer 9:** The placement of the identified head (L9H7) suggests it acts as a "mover" head, transferring information processed by earlier layers to the final output position.
 
 ---
-
-## 6. Architecture Context
-
-The findings are specific to the architecture of **GPT-2 Small**:
-
-*   **Structure:** 12 Layers, 12 Heads per layer, 768-dimensional hidden state.
-*   **Total Components:** 144 independent Attention Heads.
-*   **Layer 9:** The placement of the identified head (L9H7) suggests it acts as a "mover" head, transferring information processed by earlier layers to the final output position.
-
----
-## 5. Tools & References
+## 7. Tools & References
 
 ### Tools Used
 *   **[TransformerLens](https://transformerlensorg.github.io/TransformerLens/index.html):** Used TransformerLens to access, cache, and modify the model's internal activations during inference.
