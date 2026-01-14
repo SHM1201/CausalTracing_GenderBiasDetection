@@ -49,7 +49,7 @@ This head appeared in the top results for both testing methods:
 ### Q3: Why do Patching results differ from Ablation results?
 **Finding: Network Redundancy (Compensation).**
 Some heads, such as **Layer 10, Head 9**, showed high impact during patching but low impact during ablation.
-*   **Explanation:** This indicates redundancy. When Layer 10, Head 9 is deactivated, other heads in parallel or subsequent layers compensate for its absence. Layer 9, Head 7, conversely, showed less redundancy; the model struggled to compensate for its removal, indicating it might be necessary for the biased prediction.
+*   **Plausible Explanation:** This indicates redundancy. When Layer 10, Head 9 is deactivated, other heads in parallel or subsequent layers compensate for its absence. Layer 9, Head 7, conversely, showed less redundancy; the model struggled to compensate for its removal, indicating it might be necessary for the biased prediction.
 
 *   Wang et al. (2022) talk about back heads taking on the task of moving certain information if the main head was knocked off.
 
